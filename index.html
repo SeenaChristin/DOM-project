@@ -7,16 +7,17 @@
     <title>ToDo-App</title>
   </head>
   <body onload="getIssues()">
+    <div id="message" class="hide">Message</div>
     <section class="todoapp">
       <header class="header">
         <h1><img src="./icons8-github.svg" /> Git Issues</h1>
         <input class="new-todo" placeholder="Issue Title" autofocus />
         <input class="new-todo" placeholder="Issue Description" autofocus />
-        <button class="create" onclick="createIssue(event)">Create</button>
+        <button class="create" onclick="onClickCreate(event)">Create</button>
       </header>
     </section>
     <section class="main">
-      <ul class="todo-list" onclick="openTextBox(event)"></ul>
+      <ul class="todo-list" onclick="clickUpdate(event)"></ul>
     </section>
 
     <script src="./app.js"></script>
